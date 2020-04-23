@@ -8,6 +8,50 @@ Version 3.2 (unreleased)
 ========================
 `Milestone <https://github.com/OpenSlides/OpenSlides/milestones/3.2>`_
 
+========================
+"is:pr is:closed milestone:3.2 sort:updated-desc"
+last entry: #5323
+========================
+
+General:
+ - OpenSlides not uses Angular 9 and the Ivy rendering engine. [#5234]
+ - Improve relations (i.e discovery of Motion - User - Motions). [#5091, #5180]
+ - Reduce the load in the autoupdate system. [#5109]
+ - HTML added in the OpenSlides config will now be validated on the server. [#5168]
+ - UI, UX, stability and theme improvements. [#5228, #5238, #5262, #5270, #5272, #5274, #5278]
+ - The "make other clients poll for updates" button was removed. [#5277]
+ - The welcome page and agenda topics can be designed more openly. [#5314]
+
+Angeda:
+ - Agenda comments can now be previewed in the agenda list view as a third line. [#5293]
+ - The list of speakers can quickly create new users, if a user was not found in the search box. [#5307]
+
+Motions:
+ - It is now possible to create paragraph based amendments of paragraph based amendments. [#5173]
+ - Enforce or prevent page breaks in the motion PDF exporter. [#5191]
+ - The motion PDF table of contents will now hide the recommendation if the state is final. [#5192]
+ - The motions "final version" (modified final version) can not be created and altered independently of change recommendations. [#5193, #5209]
+ - Voting results have charts.
+ - Navigation between amendments reflects the sorting of the amendment list, if the option "show amendments together with motions" is disabled. [#5245]
+ - Shows an indicator if all motions from a motion block reached their final state. [#5246]
+ - Fix a bug where a recommendations in the workflow manager could not be deleted. [#5271]
+ - The workflow manager is now more usable on very small screens. [#5280]
+ - Sorting motions by category now sorts the list by category weight instead of the identifier. [#5308, #5310]
+
+Elections:
+ - Electronic voting.
+ - Vote weight [#5305]
+ - Voting results have charts.
+ - Fixed some permission errors. [#5194]
+
+Users:
+ - Added the "Allow users to set themselves as present" option. [#5283, #5317, #5319]
+
+Mediafiles:
+ - External servers can be used to store media files. [#5153, #5230]
+
+Projector:
+ - New projectors will reliably know their "current list of speakers" reference projector. [#5273]
 
 Version 3.1 (2019-12-13)
 ========================
