@@ -1,3 +1,4 @@
+import { Restriction } from 'app/core/core-services/operator.service';
 import { BaseModel } from '../base/base-model';
 
 /**
@@ -22,7 +23,7 @@ export class State extends BaseModel<State> {
     public name: string;
     public recommendation_label: string;
     public css_class: string;
-    public restriction: string[];
+    public restriction: Restriction[];
     public allow_support: boolean;
     public allow_create_poll: boolean;
     public allow_submitter_edit: boolean;
